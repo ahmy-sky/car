@@ -14,6 +14,16 @@ public class Boat extends Vehicle {
         this.seats = seats;
     }
 
+    public Boat() {
+
+    }
+
+    public Boat(String name, int price) {
+        super();
+        setName(name);
+        setPrice(price);
+    }
+
     @Override
     public void gas() {
         System.out.println("The boat is accelerating");

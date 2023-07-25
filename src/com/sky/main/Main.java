@@ -10,22 +10,20 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Garage garage = new Garage();
 
-        Vehicle bmw = new Car();
+        Vehicle bmw = new Car("BMW", 2000);
         bmw.gas();
 
-        Vehicle boat = new Boat();
+        Vehicle boat = new Boat("BOAT", 1000);
         boat.gas();
 
         try {
             garage.storeVehicle(bmw);
             garage.storeVehicle(boat);
-            garage.storeVehicle(bmw);
-            garage.storeVehicle(boat);
-
-            garage.storeVehicle(bmw);
         } catch (Exception e) {
             System.out.println(e);
         }
+
+        System.out.println(garage.getParked().toString());
 
     }
 }

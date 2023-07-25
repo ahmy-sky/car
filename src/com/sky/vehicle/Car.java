@@ -14,6 +14,16 @@ public class Car extends Vehicle {
         this.seats = seats;
     }
 
+    public Car() {
+
+    }
+
+    public Car(String name, int price) {
+        super();
+        setName(name);
+        setPrice(price);
+    }
+
     @Override
     public void gas() {
         System.out.println("The car is accelerating");
